@@ -19,12 +19,12 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
+// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  BKSP  |
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I    &kp O   &kp P
-   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN
+   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp BKSP
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH
           &kp LGUI &mo 1 &kp LSFT   &kp SPC &mo 2 &kp RALT
                         >;
@@ -32,12 +32,12 @@
                 nav_layer {
 // -----------------------------------------------------------------------------------------
 // |BTCLR|     | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
-// | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
+// | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT |   ;  |
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
    &bt BT_CLR   &trans  &kp ESC  &kp TILD &trans     &kp TAB  &kp HOME &kp UARW &kp END  &kp DEL
-   &bt BT_SEL 0 &kp GUI &kp RALT &kp LCTL &mo 3      &kp FSLH &kp LARW &kp DARW &kp RARW &kp BKSP
+   &bt BT_SEL 0 &kp GUI &kp RALT &kp LCTL &mo 3      &kp FSLH &kp LARW &kp DARW &kp RARW &kp SCLN
    &bt BT_SEL 1 &trans  &trans   &trans   &trans     &kp BSLH &kp RET  &trans   &trans    &trans
                         &trans   &trans   &trans     &trans   &trans   &trans
                         >;
